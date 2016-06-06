@@ -5,7 +5,10 @@ import javax.swing.JOptionPane;
 public class Principal_ {
 
     public static boolean p = false;
-
+/**
+ * Aquí solicitarás un número e se é maior que 0 comezará unha secuencia de condicionales
+ * @param arg 
+ */
     public static void main(String arg[]) {
         int numeros = Integer.parseInt(JOptionPane.showInputDialog("Escribe un numero:"));
         int numeroDigitos = 0;
