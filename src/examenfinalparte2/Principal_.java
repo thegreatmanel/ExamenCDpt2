@@ -26,39 +26,47 @@ public class Principal_ {
             }
             numeros = contador;
 
-            if (numeros == numeros) {
-                if (i < 4) {
-                    p = true;
+            métodoúnico(numeros, i);
+        }
+    }
+/**
+ * Aquí crearemos o único método que podemos facer
+ * @param numeros
+ * @param i 
+ */
+    public static void métodoúnico(int numeros, int i) {
+        if (numeros == numeros) {
+            if (i < 4) {
+                p = true;
+            } else {
+                if (i % 2 == 0) {
+                    p = false;
                 } else {
-                    if (i % 2 == 0) {
-                        p = false;
-                    } else {
-                        int contador1 = 0;
-                        int i1 = 1;
-                        int k = (i - 1) / 2;
-                        if (k % 2 == 0) {
-                            k--;
+                    int contador1 = 0;
+                    int i1 = 1;
+                    int k = (i - 1) / 2;
+                    if (k % 2 == 0) {
+                        k--;
+                    }
+                    
+                    while (i1 <= k) {
+                        if (i % i1 == 0) {
+                            contador1++;
                         }
-
-                        while (i1 <= k) {
-                            if (i % i1 == 0) {
-                                contador1++;
-                            }
-                            i1 += 2;
-                            if (contador1 == 2) {
-                                i1 = k + 1;
-                            }
-                        }
-
-                        if (contador1 == 1) {
-                            p = true;
+                        i1 += 2;
+                        if (contador1 == 2) {
+                            i1 = k + 1;
                         }
                     }
+                    
+                    if (contador1 == 1) {
+                        p = true;
+                    }
                 }
-
-                if (p == true) {
-                    System.out.println(i);
-                }
+            }
+            
+            if (p == true) {
+                System.out.println(i);
             }
         }
     }
