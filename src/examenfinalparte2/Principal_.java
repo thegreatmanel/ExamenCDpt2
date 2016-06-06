@@ -5,10 +5,8 @@ import javax.swing.JOptionPane;
 public class Principal_ {
 
     public static boolean p = false;
-/**
- * Aquí solicitarás un número e se é maior que 0 comezará unha secuencia de condicionales
- * @param arg 
- */
+
+    //hice el formateo
     public static void main(String arg[]) {
         int numeros = Integer.parseInt(JOptionPane.showInputDialog("Escribe un numero:"));
         int numeroDigitos = 0;
@@ -29,11 +27,13 @@ public class Principal_ {
             métodoúnico(numeros, i);
         }
     }
-/**
- * Aquí crearemos o único método que podemos facer
- * @param numeros
- * @param i 
- */
+
+    /**
+     * Aquí crearemos o único método que podemos facer
+     *
+     * @param numeros
+     * @param i
+     */
     public static void métodoúnico(int numeros, int i) {
         if (numeros == numeros) {
             if (i < 4) {
@@ -48,7 +48,7 @@ public class Principal_ {
                     if (k % 2 == 0) {
                         k--;
                     }
-                    
+
                     while (i1 <= k) {
                         if (i % i1 == 0) {
                             contador1++;
@@ -58,13 +58,13 @@ public class Principal_ {
                             i1 = k + 1;
                         }
                     }
-                    
+
                     if (contador1 == 1) {
                         p = true;
                     }
                 }
             }
-            
+
             if (p == true) {
                 System.out.println(i);
             }
